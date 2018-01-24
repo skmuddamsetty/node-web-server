@@ -44,6 +44,12 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    welcomeMessage: 'Welcome To Projects Page',
+    pageTitle: 'Projects'
+  });
+});
 app.listen(port,()=>{
   console.log(`Server up and running on port ${port}`);
 });
